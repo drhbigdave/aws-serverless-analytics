@@ -7,3 +7,6 @@
 
 # .tfvars files
 *.tfvars
+
+# class resources downloaded from Udemy
+**/class_resources/*
