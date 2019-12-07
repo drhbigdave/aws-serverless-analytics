@@ -9,5 +9,5 @@ variable "iam_roles" {}
 variable "final_snap" {}
 variable "subnet" {}
 variable "availability_zone" {}
-variable "master_sg" {}
+#variable "master_sg" {}
 #variable "vpc_id" {}

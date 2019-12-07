@@ -19,7 +19,7 @@ module "redshift" {
   node_type         = "dc2.large"
   cluster_type      = "multi-node"
   nodes             = 2
-  subnet_group_name = "group1"
+  subnet_group_name = "redshift-subnet-group1"
   enhanced          = true
   iam_roles         = "udemy_pipeline"
   final_snap        = true

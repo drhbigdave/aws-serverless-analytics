@@ -23,12 +23,12 @@ resource "aws_security_group" "redshift" {
   }
 
   ingress {
-    from_port       = 0
-    to_port         = 0
-    protocol        = "-1"
-    cidr_blocks     = ["${data.aws_ssm_parameter.home_ip.value}"]
-    security_groups = ["${var.master_sg}"]
-    self            = true
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["${data.aws_ssm_parameter.home_ip.value}"]
+    #    security_groups = ["${var.master_sg}"]
+    self = true
   }
 
   egress {
